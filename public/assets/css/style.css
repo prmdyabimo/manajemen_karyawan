@@ -1,0 +1,26 @@
+.listBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.btnShow {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btnEdit {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btnDelete {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
