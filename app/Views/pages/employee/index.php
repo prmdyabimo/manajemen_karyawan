@@ -46,24 +46,25 @@
                     <td>
                         <?= $employee['updated_at']; ?>
                     </td>
-                    <td class="listBtn">
-                        <a href="<?= base_url('/show/' . $employee['employee_id']); ?>" class="btnShow">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="<?= base_url('/edit/' . $employee['employee_id']); ?>" class="btnEdit">
-                            <i class="fas fa-edit"></i>
-                        </a>
-                        <a href="<?= base_url('/delete/' . $employee['employee_id']); ?>" class="btnDelete">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                    </td>
-                </tr>
+                    <td>
+                        <div class="listBtn">
+                            <a href="<?= base_url('/show/' . $employee['employee_id']); ?>" class="btnShow">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="<?= base_url('/edit/' . $employee['employee_id']); ?>" class="btnEdit">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="<?= base_url('/delete/' . $employee['employee_id']); ?>" class="btnDelete">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 </div>
 
-<!-- Vertically centered modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
